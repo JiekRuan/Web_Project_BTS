@@ -5,7 +5,7 @@ html{
 body{
 	font: 1.6rem 'Open Sans', sans-serif;
 	margin:0;
-	background-color: var(--default);
+	background-color: var(--color-white);
 	font-weight: 500;
 }
 section,figure,h1,h2,h3,h4,h5,h6,ol,p,ul{
@@ -63,14 +63,27 @@ button,input,select{
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 	background-color: #111;
 	box-shadow: 0rem 0.1rem 1rem 0 rgba(11, 11, 11, 0.752);
 	padding: 2rem;
 }
-
+header h1{
+    padding: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+	border-radius: 1rem;
+	color: #fff;
+} 
+header .connexion{
+    color: var(--color-black);
+    border: solid;
+    border-radius: 1rem;
+    background-color: var(--color-letter);
+    padding: 0.5rem;
+}
 /*MODALE*/
-main .grid-picture-large{
+ main .grid-picture-large{
     display: grid;
 	grid-template-columns: repeat(5, 1fr);
 	gap: 1rem;
@@ -78,7 +91,11 @@ main .grid-picture-large{
 	max-width: 120rem;
 	border-radius: .5rem;
 }
-
+main section ul li img{
+    width: 20rem;
+    height: 30rem;
+    border-radius: 1rem;
+}
 
 ul figure{
     position: relative;
@@ -205,4 +222,4 @@ section ul figure:hover figcaption{
 }
 .parent-modale .modale button .material-icons{
 	vertical-align: -.4rem;
-}
+}  
