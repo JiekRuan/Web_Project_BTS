@@ -1,18 +1,13 @@
 <?php
-include_once("./pages/header_inc.php");
+include_once("./pages/header.inc.php");
 ?>
 
 <body>
     <header>
-        <a href="./"><img src="./assets/1490877823-sport-badges06_82415.png" alt="streaming" /></a>
+        <a href="./index.php"><img src="./assets/ligue64.png" alt="ligue" /></a>
         <h1>Maison des ligues - tous les sports</h1>
         <ul>
-            <li aria-hidden="true">
-                <span class="material-icons"> visibility </span>
-            </li>
-            <li aria-hidden="true">
-                <span class="material-icons"> light_mode </span>
-            </li>
+
         </ul>
     </header>
     <main>
@@ -47,5 +42,5 @@ include_once("./pages/header_inc.php");
         </fieldset>
     </main>
     <?php
-    include_once("./pages/footer_inc.php");
+    include_once("./pages/footer.inc.php");
     ?>

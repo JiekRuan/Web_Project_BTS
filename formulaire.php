@@ -6,25 +6,28 @@ include_once("./pages/header.inc.php");
     <header>
         <a href="./index.php"><img src="./assets/ligue64.png" alt="streaming"></a>
         <h1>Maison des ligues - tous les sports</h1>
+        <a href="./Connexion.php" class="connexion">
+            Connexion <span class="material-icons"> login </span>
+        </a>
     </header>
     <main>
         <section>
-            <h2>Suivez vos joueurs préférés</h2>
+            <h2 class="title">Suivez vos joueurs préférés</h2>
             <ul class="grid-picture-large">
-                <li data-image="./assets/jenNezMarre.jpg" data-title="Neymar" data-description="Joueur Brézilien" data-dates="16/02/2022">
-                    <figure><img src="./assets/jenNezMarre.jpg" alt="Neymar"></figure>
+                <li data-image="./assets/olympique/jenNezMarre.jpg" data-title="Neymar" data-description="Joueur Brézilien" data-dates="16/02/2022">
+                    <figure><img src="./assets/olympique/jenNezMarre.jpg" alt="Neymar"></figure>
                 </li>
-                <li data-image="./assets/menon.jpg" data-title="Messi" data-description="Joueur Argentin" data-dates="16/02/2022">
-                    <figure><img src="./assets/menon.jpg" alt="Messi"></figure>
+                <li data-image="./assets/olympique/menon.jpg" data-title="Messi" data-description="Joueur Argentin" data-dates="16/02/2022">
+                    <figure><img src="./assets/olympique/menon.jpg" alt="Messi"></figure>
                 </li>
-                <li data-image="./assets/ronalventre.jpg" data-title="ronaldo" data-description="Joueur Portugais" data-dates="16/02/2022">
-                    <figure><img src="./assets/ronalventre.jpg" alt="ronaldo"></figure>
+                <li data-image="./assets/olympique/ronalventre.jpg" data-title="ronaldo" data-description="Joueur Portugais" data-dates="16/02/2022">
+                    <figure><img src="./assets/olympique/ronalventre.jpg" alt="ronaldo"></figure>
                 </li>
-                <li data-image="./assets/sun.jpg" data-title="sun" data-description="Joueur Coréen" data-dates="16/02/2022">
-                    <figure><img src="./assets/sun.jpg" alt="sun"></figure>
+                <li data-image="./assets/olympique/sun.jpg" data-title="sun" data-description="Joueur Coréen" data-dates="16/02/2022">
+                    <figure><img src="./assets/olympique/sun.jpg" alt="sun"></figure>
                 </li>
-                <li data-image="./assets/mbappé.jpg" data-title="mbappé" data-description="Joueur Français" data-dates="16/02/2022">
-                    <figure><img src="./assets/mbappé.jpg" alt="mbappé"></figure>
+                <li data-image="./assets/olympique/mbappé.jpg" data-title="mbappé" data-description="Joueur Français" data-dates="16/02/2022">
+                    <figure><img src="./assets/olympique/mbappé.jpg" alt="mbappé"></figure>
                 </li>
             </ul>
         </section>
@@ -67,9 +70,9 @@ include_once("./pages/header.inc.php");
         include_once("./pages/main_form.inc.php");
         ?>
         <p id="warning"></p>
-        <fieldset>
+        <fieldset class="formulaire">
             <legend>Remplissez le formulaire</legend>
-            <form method="post">
+            <form method=" post">
                 <label for="nom">nom</label>
                 <input type="text" id="nom" name="nom" placeholder="nom" aria-required="true" autofocus required>
                 <label for="prenom">prénom</label>
@@ -93,11 +96,11 @@ include_once("./pages/header.inc.php");
                 <input type="email" id="email" name="email" placeholder="email" aria-required="true" required>
                 <label for="password">Mot de passe</label>
                 <input type="password" id="password" name="password" placeholder="password" aria-required="true" required>
-                <input type="submit" value="Valider">
+                <input type="submit" value="Valider" class="btn">
             </form>
         </fieldset>
         <!-- modale -->
-        <div class="parent-modale" role="dialog" aria-label="true">
+        <div class=" parent-modale" role="dialog" aria-label="true">
             <figure class="modale">
                 <button aria-label="closed">
                     <span class="material-icons">clear</span>
